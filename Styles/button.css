@@ -1,0 +1,13 @@
+﻿body {
+}
+
+.google
+{
+    background-color: #0274b3;
+    display: block;
+    width: 200px;
+    margin: 15px auto;
+    font-family: proxima_novasemibold;
+    color: #fff;
+    border-radius: 4px;
+}
