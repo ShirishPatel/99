@@ -90,7 +90,17 @@ border: 1px solid #666;
 border-radius: 10px;
 box-shadow: 0 0 10px #666;
 padding-top: 10px
-}legend{margin:0 5px;padding:5px;background:transparent;font-weight:700;font-size:1em}
+}
+legend {
+    margin: 0 0px;
+    padding: 5px 20px;
+    background: #ffffff;
+    font-weight: 700;
+    font-size: 1em;
+    width: auto;
+    text-align: center;
+    border: none;
+}
 
 footer {
 color: white;
