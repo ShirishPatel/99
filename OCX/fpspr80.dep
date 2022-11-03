@@ -1,0 +1,25 @@
+
+; Dependency file for setup wizards.
+
+[Version]
+Version=8.0.4
+
+; Dependencies for FPSPR80.OCX
+
+; Default Dependencies ----------------------------------------------
+
+[FPSPR80.OCX]
+Dest=$(WinSysPath)
+Register=$(DLLSelfRegister)
+Version=8.0.4
+Uses1=mfc42.dll
+Uses2=msvcrt.dll
+
+[mfc42.dll]
+Dest=$(WinSysPathSysFile)
+Register=$(DLLSelfRegister)
+Uses1=
+
+[msvcrt.dll]
+Dest=$(WinSysPathSysFile)
+Uses1=

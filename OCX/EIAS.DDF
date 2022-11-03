@@ -1,0 +1,50 @@
+.OPTION EXPLICIT
+.Set Cabinet=off
+.Set Compress=off
+.Set MaxDiskSize=CDROM
+.Set ReservePerCabinetSize=6144
+.Set DiskDirectoryTemplate=".."
+.Set CompressionType=MSZIP
+.Set CompressionLevel=7
+.Set CompressionMemory=21
+.Set CabinetNameTemplate="EIAS.CAB"
+"Setup.Lst"
+"setup.exe"
+.Set Cabinet=on
+.Set Compress=on
+"EIAS.exe"
+"msvbvm60.dll"
+"oleaut32.dll"
+"olepro32.dll"
+"asycfilt.dll"
+"stdole2.tlb"
+"COMCAT.DLL"
+"EXCEL.EXE"
+"msado20.tlb"
+"dao360.dll"
+"crviewer.dll"
+"craxdrt.dll"
+"craxddrt.dll"
+"Implode.dll"
+"Crpaig80.dll"
+"msvcrt.dll"
+"mfc42.dll"
+"SSCSDK80.DLL"
+"PG32CONV.DLL"
+"P2smon.dll"
+"scrrun.dll"
+"MSCOMCTL.OCX"
+"b8Controls.ocx"
+"mscomct2.ocx"
+"ComDlg32.ocx"
+"MSDATLST.OCX"
+"MSHFLXGD.OCX"
+"MSSTDFMT.DLL"
+"Codejock.SkinFramework.v15.0.1.ocx"
+"NSDataCombo.ocx"
+"NSStyleButton.ocx"
+"msflxgrd.ocx"
+"MSDATGRD.OCX"
+"SETUP1.EXE"
+"VB6STKIT.DLL"
+"ST6UNST.EXE"

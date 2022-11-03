@@ -1,0 +1,26 @@
+[Version]
+Version=1.1.0.3
+
+[FAST2003.ocx <0009>]
+Dest=$(WinSysPath)
+Date=6/4/00
+Time=11.01
+Version=1.1.0.3
+CABFilename=FAST2003.CAB
+CABINFFile=FAST2003.INF
+Uses1=MSVBVM60.DLL
+Uses2=OLEAUT32.DLL
+Uses3=OLEPRO32.DLL
+Uses4=ASYCFILT.DLL
+Uses5=STDOLE2.TLB
+Uses6=COMCAT.DLL
+Uses7=ODBC32.DLL
+Uses8=TLBINF32.DLL
+Uses9=FAST2004.dll
+Uses10=FAST2006.ocx
+
+[TLBINF32.DLL <0009>]
+Dest=$(WinSysPath)
+Date=18/6/98
+Time=00.00
+Version=1.1.81.69

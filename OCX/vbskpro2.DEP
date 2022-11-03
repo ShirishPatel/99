@@ -1,0 +1,16 @@
+[Version]
+Version=2.1.0.0
+
+[vbskpro2.ocx <0009>]
+Dest=$(WinSysPath)
+Date=11/11/2003
+Time=16:36
+Version=2.1.0.0
+CABFilename=vbskpro2.CAB
+CABINFFile=vbskpro2.INF
+Uses1=msvbvm60.dll
+Uses2=oleaut32.dll
+Uses3=olepro32.dll
+Uses4=asycfilt.dll
+Uses5=stdole2.tlb
+Uses6=COMCAT.DLL

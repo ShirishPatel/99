@@ -1,0 +1,17 @@
+[Version]
+Version=1.4.0.0
+
+[rsp-zip-compress-s140.ocx <0009>]
+Dest=$(AppPath)
+Date=11/16/2004
+Time=11:56
+Version=1.4.0.0
+CABFilename=rsp-zip-compress-s140.CAB
+CABINFFile=rsp-zip-compress-s140.INF
+Uses1=msvbvm60.dll
+Uses2=oleaut32.dll
+Uses3=olepro32.dll
+Uses4=asycfilt.dll
+Uses5=stdole2.tlb
+Uses6=COMCAT.DLL
+Uses7=MSSTKPRP.DLL

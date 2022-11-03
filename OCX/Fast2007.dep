@@ -1,0 +1,25 @@
+[Version]
+Version=1.1.0.2
+
+[FAST2007.ocx <0009>]
+Dest=$(WinSysPath)
+Date=6/4/00
+Time=11.02
+Version=1.1.0.2
+CABFilename=FAST2007.CAB
+CABINFFile=FAST2007.INF
+Uses1=MSVBVM60.DLL
+Uses2=OLEAUT32.DLL
+Uses3=OLEPRO32.DLL
+Uses4=ASYCFILT.DLL
+Uses5=STDOLE2.TLB
+Uses6=COMCAT.DLL
+Uses7=cards.dll
+Uses8=FAST2004.dll
+Uses9=MSSTKPRP.DLL
+
+[cards.dll <0009>]
+Dest=$(WinSysPath)
+Date=17/8/96
+Time=12.00
+Version=4.0.1371.1

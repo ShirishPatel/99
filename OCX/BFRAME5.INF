@@ -1,0 +1,101 @@
+; Application: BubbleFrame
+; Version    : 1.0
+; Author     : Bubble Kft.
+; Copyright  : © 1999 by Bubble Kft., Budapest
+; Created by : INF-Tool Setup Program and INF File Generator
+;              from http://Inner-Smile.com
+; Licence of : Bubble Kft. Gerd Müller, 1025 Budapest, Hungary 
+; ---------------------------------------------------------------------------
+
+[Version]
+Signature=$Chicago$
+Provider=%Author%
+SetupClass=BASE
+Compatible=1
+AdvancedINF=2.5,"You need a newer version of ADVPACK.DLL!"
+Generator=INF-Tool v5.2c/r
+
+[Optional Components]
+INFTool_1
+
+[Optional Components.ntx86]
+INFTool_1.ntx86
+
+[AdvSetup]
+HKLM,%RunOnce%Setup,"BubbleFrame...",,"RunDll32.exe %11%\advpack.dll,LaunchINFSection BFRAME5.INF,DefaultInstall2"
+[AdvSetup.ntx86]
+HKLM,%RunOnce%Setup,"BubbleFrame...",,"RunDll32.exe %11%\advpack.dll,LaunchINFSection BFRAME5.INF,DefaultInstall2.ntx86"
+
+[Strings]
+Product="BubbleFrame"
+Version="1.0"
+Author="Bubble Kft."
+Copyright="© 1999 by Bubble Kft., Budapest"
+DiskName="BubbleFrame, Setup Disk #1"
+Runonce="SOFTWARE\Microsoft\Windows\CurrentVersion\Runonce\"
+Setup="SOFTWARE\Microsoft\Windows\CurrentVersion\Setup"
+
+[INFTool.AddINI]
+win.ini,Desktop,Wallpaper,HKLM,%Setup%,2
+win.ini,Desktop,TileWallpaper,HKLM,%Setup%,2
+
+[SourceDisksNames]
+1=%DiskName%,,0
+
+[SourceDisksFiles]
+Bframe5.ocx=1,,112128
+bframe.chm=1,,32694
+
+[DestGrp]
+Bframe5.ocx
+
+[DestGrp1]
+bframe.chm
+
+[DestinationDirs]
+DestGrp=11
+DestGrp1=10,"HELP"
+
+[INFRegOCX]
+%11%\Bframe5.ocx
+
+[DefaultInstall]
+Ini2Reg=INFTool.AddINI
+AddReg=AdvSetup
+
+[DefaultInstallX]
+[DefaultInstall2]
+RegisterOCXs=INFRegOCX
+Copyfiles=DestGrp,DestGrp1
+BeginPrompt=InstallBegin
+EndPrompt=InstallComplete
+
+[DefaultInstall.ntx86]
+AddReg=AdvSetup.ntx86
+
+[DefaultInstall2.ntx86]
+RegisterOCXs=INFRegOCX
+Copyfiles=DestGrp,DestGrp1
+BeginPrompt=InstallBegin
+EndPrompt=InstallComplete
+
+[INFTool_1]
+OptionDesc=%Product%
+Tip=%info%
+InstallType=0
+AddReg=AdvSetup
+
+[INFTool_1.ntx86]
+OptionDesc=%Product%
+Tip=%info%
+InstallType=0
+AddReg=AdvSetup.ntx86
+
+[InstallBegin]
+Title="BubbleFrame"
+Prompt="This will register BubbleFrame ActiveX Control (VB5) on your System directory."
+ButtonType=YESNO
+
+[InstallComplete]
+Prompt="To uninstall BubbleFrame ActiveX Control use Regsvr32.exe with option /U"
+Title="BubbleFrame"

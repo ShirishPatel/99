@@ -1,0 +1,57 @@
+;INF file for ASoftSplashScreen.ocx
+;DestDir can be 10 for Windows directory, 11 for Windows\System(32) directory, or left blank for the Occache directory.
+
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+ASOFTSPLASHSCREEN.OCX=ASOFTSPLASHSCREEN.OCX
+MSSTKPRP.DLL=MSSTKPRP.DLL
+ASYCFILT.DLL=ASYCFILT.DLL
+MSVBVM50.DLL=MSVBVM50.DLL
+
+[ASOFTSPLASHSCREEN.OCX]
+file-win32-x86=thiscab
+RegisterServer=yes
+clsid={38EB9683-342A-11D2-BEBB-60505AC10000}
+DestDir=
+FileVersion=1,0,0,2
+
+[MSSTKPRP.DLL]
+hook=MsStkPrp.cab_Installer
+FileVersion=5,1,43,19
+
+[MsStkPrp.cab_Installer]
+file-win32-x86=http://activex.microsoft.com/controls/vb5/MsStkPrp.cab
+InfFile=MsStkPrp.inf
+
+[ASYCFILT.DLL]
+hook=AsycFilt.cab_Installer
+FileVersion=2,20,4118,1
+
+[AsycFilt.cab_Installer]
+file-win32-x86=http://activex.microsoft.com/controls/vb5/AsycFilt.cab
+InfFile=AsycFilt.inf
+
+[MSVBVM50.DLL]
+hook=MSVBVM50.cab_Installer
+FileVersion=5,1,43,19
+
+[MSVBVM50.cab_Installer]
+file-win32-x86=http://activex.microsoft.com/controls/vb5/MSVBVM50.cab
+InfFile=MSVBVM50.inf
+
+[Setup Hooks]
+AddToRegHook=AddToRegHook
+
+[AddToRegHook]
+InfSection=DefaultInstall
+
+[DefaultInstall]
+AddReg=AddToRegistry
+
+
+[AddToRegistry]
+HKLM,"SOFTWARE\Classes\CLSID\{38EB9683-342A-11D2-BEBB-60505AC10000}\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}"
+HKLM,"SOFTWARE\Classes\CLSID\{38EB9683-342A-11D2-BEBB-60505AC10000}\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}"
